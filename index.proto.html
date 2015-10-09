@@ -1210,7 +1210,7 @@
 
       <h2><a name="hide-search-on-single-select" class="anchor" href="#hide-search-on-single-select">Hide Search on Single Select</a></h2>
       <div class="side-by-side clearfix">
-        <p>The disable_search_threshold option can be specified to hide the search input on single selects if there are fewer than (n) options.</p>
+        <p>The <code>disable_search_threshold</code> option can be specified to hide the search input on single selects if there are <i>n</i> or fewer options.</p>
         <pre><code class="language-javascript"> new Chosen($("chosen_select_field"),{disable_search_threshold: 10}); </code></pre>
         <p></p>
         <div>
@@ -1332,7 +1332,7 @@
         <ul>
           <li>
             <h3>Form Field Change</h3>
-            <p>When working with form fields, you often want to perform some behavior after a value has been selected or deselected. Whenever a user selects a field in Chosen, it triggers a "change" event* on the original form field. That let's you do something like this:</p>
+            <p>When working with form fields, you often want to perform some behavior after a value has been selected or deselected. Whenever a user selects a field in Chosen, it triggers a "change" event on the original form field. That let's you do something like this:</p>
             <pre><code class="language-javascript">$("#form_field").chosen().change( &hellip; );</code></pre>
             <p><strong>Note:</strong> Prototype doesn't offer support for triggering standard browser events. <a href="https://github.com/kangax/protolicious/blob/5b56fdafcd7d7662c9d648534225039b2e78e371/event.simulate.js">Event.simulate</a> is required to trigger the change event when using the Prototype version.</p>
           </li>
